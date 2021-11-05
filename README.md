@@ -14,9 +14,9 @@ The E-Wallet is an application or program which I can through it to make my fina
 
 ## Stakeholders: 
 each one involved in the project, and it includes
-####Customer.
-####Developers.
-####Users.
+###Customer.
+###Developers.
+###Users.
 
 
 
