@@ -13,7 +13,7 @@ The E-Wallet is an application or program which I can through it to make my fina
 #### 6. Ibrahim Shalhoub : Developer. 
 
 ## Stakeholders: 
-###each one involved in the project, and it includes
+each one involved in the project, and it includes
 ####Customer.
 ####Developers.
 ####Users.
