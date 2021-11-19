@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software_project.NewUser">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1046.0" layoutY="-4.0" opacity="0.43" pickOnBounds="true">
+         <image>
+            <Image url="@../imgs/users.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="476.0" layoutY="36.0" prefHeight="70.0" prefWidth="180.0" text="New User" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <VBox layoutX="82.0" layoutY="134.0" prefHeight="487.0" prefWidth="394.0">
+         <children>
+            <JFXTextField fx:id="FirstName" labelFloat="true" promptText="First Name">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="ssn1" labelFloat="true" promptText="SSN">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="birthdate" prefHeight="28.0" prefWidth="547.0" promptText="Birthdate">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXComboBox fx:id="country" prefHeight="25.0" prefWidth="424.0" promptText="Country">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXPasswordField fx:id="password" labelFloat="true" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="zipcode" labelFloat="true" promptText="Zip Code">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="verification_password" labelFloat="true" promptText="Verfication Password">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="ccn" labelFloat="true" promptText="CCN">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <VBox layoutX="609.0" layoutY="125.0" prefHeight="487.0" prefWidth="394.0">
+         <children>
+            <JFXTextField fx:id="LastName" labelFloat="true" promptText="Last Name">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="username" labelFloat="true" promptText="username">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="email" labelFloat="true" promptText="Email">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="city" prefHeight="0.0" prefWidth="394.0" promptText="City">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXPasswordField fx:id="cpassword" labelFloat="true" promptText="Confirm Password">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="bankID" labelFloat="true" promptText="Bank ID">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="cvpassword" labelFloat="true" promptText="Confirm Verification Password">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="amount" labelFloat="true" promptText="Initial Financial Amount">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <JFXButton layoutX="483.0" layoutY="662.0" onAction="#saveData" prefHeight="28.0" prefWidth="166.0" style="-fx-background-color: #6699ff; -fx-background-radius: 5em;" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="war" layoutX="82.0" layoutY="647.0" prefHeight="30.0" prefWidth="360.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
