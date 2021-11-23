@@ -59,4 +59,10 @@ public class AdminInterface implements Initializable {
              stage.show(); 
     }
     
+    
+    public void setInfo(String username)
+    {
+        this.username.setText(username);
+    }
+    
 }

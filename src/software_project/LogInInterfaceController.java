@@ -42,6 +42,10 @@ public class LogInInterfaceController implements Initializable {
     private JFXTextField ID;
     @FXML
     private JFXPasswordField Password;
+    
+    int i =0; 
+    String names [] = new String [2]; 
+    
     /**
      * Initializes the controller class.
      */
@@ -53,8 +57,26 @@ public class LogInInterfaceController implements Initializable {
     @FXML
     private void LogIn(ActionEvent event) {
         
-
+        if (i>1)
+        {
+            i=0; 
+        }
         
+        
+        
+           names [i] = this.ID.getText(); 
+           
+           if (names[1] != null)
+           {
+               if (!names [0].equals(names[1]))
+                       {
+                           counter =0; 
+                       }
+           }
+           
+            
+           
+     
         if (this.ID.getText().isEmpty() || this.Password.getText().isEmpty())
         {
                              this.warnings.setVisible(true);
@@ -73,7 +95,7 @@ public class LogInInterfaceController implements Initializable {
              if (!rs.next())
              {
                  this.warnings.setVisible(true);
-             this.warnings.setText("This usernname doesn't exist"); 
+             this.warnings.setText("This BankID doesn't exist"); 
  
              }
              
@@ -83,7 +105,7 @@ public class LogInInterfaceController implements Initializable {
                 ResultSet rs2 = stmt.executeQuery(selectuserdata);  
                 rs2.next(); 
                 
-                if (rs2.getInt(12) == 1)
+                if (rs2.getInt(14) == 1)
                 {
                     this.warnings.setVisible(true); 
                     this.warnings.setText("This account is blocked,activate it from admin");
@@ -98,7 +120,7 @@ public class LogInInterfaceController implements Initializable {
             FXMLLoader loader = new FXMLLoader (getClass().getResource("UserInterface.fxml"));  
             Parent root = loader.load(); 
             UserInterface userinterface = loader.getController(); 
-            userinterface.setInfo(ID.getText());
+            userinterface.setInfo(this.ID.getText());
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow(); 
             Scene scene = new Scene (root); 
             stage.setScene(scene);
@@ -108,7 +130,8 @@ public class LogInInterfaceController implements Initializable {
                 else
                 {
                     counter++; 
-                    if (counter >=3)
+                    i++;
+                    if (counter >= 3)
                     {
                         String update = "update user set blocking='"+1+"' where bankID='"+this.ID.getText()+"'"; 
                         stmt.executeUpdate(update); 
@@ -121,7 +144,6 @@ public class LogInInterfaceController implements Initializable {
                          this.warnings.setText("Password is wrong"); 
                     }
                 }
-                 
                  
              }
              
