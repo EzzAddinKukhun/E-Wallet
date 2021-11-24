@@ -5,6 +5,7 @@
  */
 package software_project;
 
+import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.net.URL;
@@ -37,7 +38,7 @@ public class AdminLogIn implements Initializable {
     @FXML
     private JFXTextField username;
     @FXML
-    private JFXTextField password;
+    private JFXPasswordField password;
     @FXML
     private Label warning;
 
