@@ -84,5 +84,17 @@ public class UserInterface implements Initializable {
              stage.setScene (new Scene (root)); 
              stage.show(); 
     }
+
+    @FXML
+    private void showTransactions(ActionEvent event) {
+    }
+
+    @FXML
+    private void showNotifications(ActionEvent event) {
+    }
+
+    @FXML
+    private void showExchangeRate(ActionEvent event) {
+    }
     
 }
