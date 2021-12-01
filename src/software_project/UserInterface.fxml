@@ -14,7 +14,7 @@
             <Font size="37.0" />
          </font>
       </Label>
-      <Label fx:id="bankID" layoutX="294.0" layoutY="99.0" prefHeight="36.0" prefWidth="309.0" text="BankID" textAlignment="CENTER">
+      <Label fx:id="bankID" layoutX="371.0" layoutY="99.0" prefHeight="36.0" prefWidth="172.0" text="BankID" textAlignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
@@ -43,14 +43,38 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="307.0" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Show Transactions" textFill="#fcfcfc">
+      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="307.0" onAction="#showTransactions" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Show Transactions" textFill="#fcfcfc">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
          <graphic>
             <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../imgs/transfer.png" />
+                  <Image url="@../imgs/money-transfer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="449.0" layoutY="307.0" onAction="#showNotifications" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Notifications" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/notification.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="198.0" layoutY="399.0" onAction="#showExchangeRate" prefHeight="66.0" prefWidth="192.0" style="-fx-background-color: #4287f5; -fx-background-radius: 5em;" text="Exchange Rate" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/exchange.png" />
                </image>
             </ImageView>
          </graphic>
